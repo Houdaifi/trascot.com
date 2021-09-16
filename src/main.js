@@ -3,8 +3,10 @@ import App from './App.vue'
 import './index.css'
 import router from './router'
 import store from './store'
+import VueCarousel from 'vue-carousel'
 
 Vue.config.productionTip = false
+Vue.use(VueCarousel)
 
 new Vue({
   router,

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-gray-50">
     <nav class="container mx-auto p-4 flex justify-between items-center">
       <h1 class="text-4xl font-bold">Tra</h1>
 
@@ -36,7 +36,7 @@
       </div>
     </nav>
 
-    <div class="min-h-screen opacity-60 bg-black flex flex-col items-center justify-center space-y-4 py-2 text-white md:hidden slide-left" :class="open ? 'block' : 'hidden'">
+    <div class="min-h-screen opacity-60 bg-black flex flex-col items-center justify-center space-y-4 py-2 text-white text-lg md:hidden slide-left" :class="open ? 'block' : 'hidden'">
        <div class="group flex flex-col space-y-2">
           <a href="#" class="group-hover:text-gray-100">Accueil</a>
           <hr class="border border-blue-500 hidden text-shadow-pop-tl group-hover:block">
@@ -50,12 +50,15 @@
           <hr class="border border-blue-500 text-shadow-pop-tl invisible">
         </div>
         <div class="group flex flex-col space-y-2">
-          <a href="#" class="group-hover:text-gray-100 uppercase">à propos</a>
+          <a href="#" class="group-hover:text-gray-100">À propos</a>
           <hr class="border border-blue-500 hidden text-shadow-pop-tl group-hover:block">
         </div>
         <div class="flex flex-col space-y-2">
           <a href="#">Réferences</a>
           <hr class="border border-blue-500 text-shadow-pop-tl invisible">
+        </div>
+        <div>
+          <button class="bg-transparent bg-blue-500 font-semibold text-white py-2 px-4 border border-white">Contactez-nous</button>
         </div>
     </div>
   </div>
