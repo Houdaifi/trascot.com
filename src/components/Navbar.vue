@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-gray-50">
+  <div class="fixed w-full z-10" :class="hasScrolled ? 'bg-gray-50 text-black' : 'text-white'">
     <nav class="container mx-auto p-4 flex justify-between items-center">
-      <h1 class="text-4xl font-bold">Tra</h1>
+      <h1 class="text-4xl font-bold">Trascot</h1>
 
-      <div class="md:flex space-x-14 text-base mt-2 hidden">
+      <div class="lg:flex space-x-14 text-base mt-2 hidden">
         <div class="flex flex-col space-y-2">
           <a href="#">Accueil</a>
           <hr class="border border-blue-500 text-shadow-pop-tl">
@@ -26,36 +26,37 @@
         </div>
       </div>
 
-      <button class="hidden md:block bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Contactez-nous</button>
+      <button class="hidden lg:block bg-transparent hover:bg-blue-500 font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">Contactez-nous</button>
 
       <!-- On small screens -->
-      <div class="block md:hidden">
+      <div class="block lg:hidden">
         <button @click="toggle" class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
           <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
         </button>
       </div>
     </nav>
 
-    <div class="min-h-screen opacity-60 bg-black flex flex-col items-center justify-center space-y-4 py-2 text-white text-lg md:hidden slide-left" :class="open ? 'block' : 'hidden'">
-       <div class="group flex flex-col space-y-2">
+    <div class="h-xxl bg-black bg-opacity-70 flex flex-col items-center justify-center space-y-4 py-2 text-white text-lg lg:hidden slide-left"
+         :class="open ? 'block' : 'hidden'">
+        <div class="group flex flex-col space-y-2">
           <a href="#" class="group-hover:text-gray-100">Accueil</a>
           <hr class="border border-blue-500 hidden text-shadow-pop-tl group-hover:block">
         </div>
-        <div class="flex flex-col space-y-2">
-          <a href="#">Produits</a>
-          <hr class="border border-blue-500 text-shadow-pop-tl invisible">
+        <div class="group flex flex-col space-y-2">
+          <a href="#" class="group-hover:text-gray-100">Produits</a>
+          <hr class="border border-blue-500 hidden text-shadow-pop-tl group-hover:block">
         </div>
-        <div class="flex flex-col space-y-2">
-          <a href="#">Projets</a>
-          <hr class="border border-blue-500 text-shadow-pop-tl invisible">
+        <div class="group flex flex-col space-y-2">
+          <a href="#" class="group-hover:text-gray-100">Projets</a>
+          <hr class="border border-blue-500 hidden text-shadow-pop-tl group-hover:block">
         </div>
         <div class="group flex flex-col space-y-2">
           <a href="#" class="group-hover:text-gray-100">À propos</a>
           <hr class="border border-blue-500 hidden text-shadow-pop-tl group-hover:block">
         </div>
-        <div class="flex flex-col space-y-2">
-          <a href="#">Réferences</a>
-          <hr class="border border-blue-500 text-shadow-pop-tl invisible">
+        <div class="group flex flex-col space-y-2">
+          <a href="#" class="group-hover:text-gray-100">Réferences</a>
+          <hr class="border border-blue-500 hidden text-shadow-pop-tl group-hover:block">
         </div>
         <div>
           <button class="bg-transparent bg-blue-500 font-semibold text-white py-2 px-4 border border-white">Contactez-nous</button>
@@ -69,12 +70,16 @@ export default {
   name: 'Navbar',
   data(){
     return {
-      open : false
+      open : false,
+      hasScrolled: false
     }
   },
   methods:{
     toggle(){
       this.open = !this.open
+    },
+    scrollListener() {
+      this.hasScrolled = window.scrollY > 100
     }
   }
 }

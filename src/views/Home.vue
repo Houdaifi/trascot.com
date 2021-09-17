@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <navbar/>
+  <div class="bg-gray-500">
+    <navbar ref="navbar"/>
     <v-carousel/>
   </div>
 </template>
@@ -14,6 +14,9 @@ export default {
   name: 'Home',
   components: {
     Navbar,VCarousel
+  },
+  mounted(){
+    window.addEventListener('scroll', this.$refs.navbar.scrollListener)
   },
 }
 </script>
