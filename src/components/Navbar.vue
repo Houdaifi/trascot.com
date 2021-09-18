@@ -3,21 +3,21 @@
     <nav class="container mx-auto p-4 flex justify-between items-center">
       <h1 class="text-4xl font-bold">Trascot</h1>
 
-      <div class="lg:flex space-x-14 text-base mt-2 hidden">
+      <div class="lg:flex space-x-14 text-xl mt-3 hidden">
         <div class="flex flex-col space-y-2">
           <a href="#">Accueil</a>
           <hr class="border border-blue-500 text-shadow-pop-tl">
         </div>
         <div class="flex flex-col space-y-2">
-          <a href="#">Scot</a>
-          <hr class="border border-blue-500 text-shadow-pop-tl invisible">
-        </div>
-        <div class="flex flex-col space-y-2">
-          <a href="#">Produits</a>
+          <a href="#">Services</a>
           <hr class="border border-blue-500 text-shadow-pop-tl invisible">
         </div>
         <div class="flex flex-col space-y-2">
           <a href="#">Projets</a>
+          <hr class="border border-blue-500 text-shadow-pop-tl invisible">
+        </div>
+        <div class="flex flex-col space-y-2">
+          <a href="#">À propos</a>
           <hr class="border border-blue-500 text-shadow-pop-tl invisible">
         </div>
         <div class="flex flex-col space-y-2">
@@ -36,14 +36,14 @@
       </div>
     </nav>
 
-    <div class="h-xxl bg-black bg-opacity-70 flex flex-col items-center justify-center space-y-4 py-2 text-white text-lg lg:hidden slide-left"
+    <div class="min-h-screen bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-4 py-2 text-white text-lg lg:hidden slide-left"
          :class="open ? 'block' : 'hidden'">
         <div class="group flex flex-col space-y-2">
           <a href="#" class="group-hover:text-gray-100">Accueil</a>
           <hr class="border border-blue-500 hidden text-shadow-pop-tl group-hover:block">
         </div>
         <div class="group flex flex-col space-y-2">
-          <a href="#" class="group-hover:text-gray-100">Produits</a>
+          <a href="#" class="group-hover:text-gray-100">Nos services</a>
           <hr class="border border-blue-500 hidden text-shadow-pop-tl group-hover:block">
         </div>
         <div class="group flex flex-col space-y-2">
