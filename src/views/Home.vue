@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50">
+  <div class="">
     <navbar ref="navbar"/>
     <v-carousel/>
     <services class="py-16"/>

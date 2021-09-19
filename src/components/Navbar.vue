@@ -1,6 +1,6 @@
 <template>
   <div class="fixed w-full z-10" :class="hasScrolled ? 'bg-gray-50 text-black' : 'text-white'">
-    <nav class="container mx-auto p-4 flex justify-between items-center">
+    <nav class="container mx-auto p-4 flex justify-between items-center shadow">
       <h1 class="text-4xl font-bold">Trascot</h1>
 
       <div class="lg:flex space-x-14 text-xl mt-3 hidden">
@@ -59,7 +59,7 @@
           <hr class="border border-blue-500 hidden text-shadow-pop-tl group-hover:block">
         </div>
         <div>
-          <button class="bg-transparent bg-blue-500 font-semibold text-white py-2 px-4 border border-white">Contactez-nous</button>
+          <button class="bg-transparent bg-blue-500 font-semibold text-white py-2 px-4">Contactez-nous</button>
         </div>
     </div>
   </div>

@@ -4,7 +4,7 @@
      :autoplayHoverPause="false" :mouse-drag="true" :autoplayTimeout="6000" :paginationEnabled="false">
       <slide class="bg-hero-pattern bg-cover h-screen">
         <div class="bg-gray-800 bg-opacity-50 flex flex-col items-center justify-center h-full">
-          <h1 class="text-white text-center text-6xl rounded px-4 py-2 font-black tracking-wide">Slide 1 Content</h1>
+          <h1 class="text-white text-center text-6xl rounded px-4 py-2 font-black tracking-wide">Construction Métallique</h1>
         </div>
       </slide>
       <slide class="bg-hero-pattern2 bg-cover">
