@@ -1,12 +1,16 @@
 <template>
   <div class="fixed w-full z-10" :class="hasScrolled ? 'bg-gray-50 text-black' : 'text-white'">
-    <nav class="container mx-auto p-4 flex justify-between items-center shadow">
+    <nav class="container mx-auto p-4 flex justify-between items-center">
       <h1 class="text-4xl font-bold">Trascot</h1>
 
       <div class="lg:flex space-x-14 text-xl mt-3 hidden">
         <div class="flex flex-col space-y-2">
           <a href="#">Accueil</a>
           <hr class="border border-blue-500 text-shadow-pop-tl">
+        </div>
+        <div class="flex flex-col space-y-2">
+          <a href="#">À propos</a>
+          <hr class="border border-blue-500 text-shadow-pop-tl invisible">
         </div>
         <div class="flex flex-col space-y-2">
           <a href="#">Services</a>
@@ -17,16 +21,12 @@
           <hr class="border border-blue-500 text-shadow-pop-tl invisible">
         </div>
         <div class="flex flex-col space-y-2">
-          <a href="#">À propos</a>
-          <hr class="border border-blue-500 text-shadow-pop-tl invisible">
-        </div>
-        <div class="flex flex-col space-y-2">
           <a href="#">Réferences</a>
           <hr class="border border-blue-500 text-shadow-pop-tl invisible">
         </div>
       </div>
 
-      <button class="hidden lg:block bg-transparent hover:bg-blue-500 font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">Contactez-nous</button>
+      <button :class="hasScrolled ? 'bg-blue-500 text-white' : 'bg-transparent'" class="hidden lg:block hover:bg-blue-500 font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">Contactez-nous</button>
 
       <!-- On small screens -->
       <div class="block lg:hidden">
@@ -59,7 +59,7 @@
           <hr class="border border-blue-500 hidden text-shadow-pop-tl group-hover:block">
         </div>
         <div>
-          <button class="bg-transparent bg-blue-500 font-semibold text-white py-2 px-4">Contactez-nous</button>
+          <button class="bg-transparent bg-blue-500 font-semibold text-white py-2 px-4 rounded">Contactez-nous</button>
         </div>
     </div>
   </div>

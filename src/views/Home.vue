@@ -2,7 +2,7 @@
   <div class="">
     <navbar ref="navbar"/>
     <v-carousel/>
-    <services class="py-16"/>
+    <services class="py-24"/>
   </div>
 </template>
 
