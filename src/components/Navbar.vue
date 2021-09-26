@@ -3,7 +3,7 @@
     <nav class="container mx-auto p-4 flex justify-between items-center">
       <h1 class="text-4xl font-bold">Trascot</h1>
 
-      <div class="lg:flex space-x-14 text-xl mt-3 hidden">
+      <div class="lg:flex space-x-14 text-lg mt-3 hidden">
         <div class="flex flex-col space-y-2">
           <a href="#">Accueil</a>
           <hr class="border border-blue-500 text-shadow-pop-tl">

@@ -13,9 +13,9 @@
           <h1 class="text-white text-center text-4xl md:text-5xl xl:text-6xl leading-normal md:leading-relaxed xl:leading-relaxed rounded font-black tracking-wide max-w-7xl uppercase">
             Trascot vous offre une large choix de stockage standard ou sur meusre
           </h1>
-          <button class="text-white bg-yellow-500 bg-opacity-90 hover:bg-yellow-600 px-12 py-2 rounded-3xl text-xl font-medium">
+          <button class="text-white bg-yellow-500 bg-opacity-90 hover:bg-yellow-600 px-12 py-2 rounded-3xl text-base xl:text-xl font-medium">
             Voir plus
-            <font-awesome-icon icon="arrow-right" class="text-xl ml-2" />
+            <font-awesome-icon icon="arrow-right" class="text-sm xl:text-base ml-2" />
           </button>
         </div>
       </slide>
