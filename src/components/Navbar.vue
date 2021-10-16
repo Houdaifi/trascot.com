@@ -1,9 +1,9 @@
 <template>
   <div class="fixed w-full z-10" :class="hasScrolled ? 'bg-gray-50 text-black' : 'text-white'">
     <nav class="container mx-auto p-4 flex justify-between items-center">
-      <h1 class="text-4xl font-bold">Trascot</h1>
+      <h1 class="text-3xl 2xl:text-4xl font-bold">Trascot</h1>
 
-      <div class="lg:flex space-x-14 text-lg mt-3 hidden">
+      <div class="lg:flex space-x-14 text-base 2xl:text-lg mt-3 hidden">
         <div class="flex flex-col space-y-2">
           <a href="#">Accueil</a>
           <hr class="border border-blue-500 text-shadow-pop-tl">
@@ -11,7 +11,7 @@
         <div class="flex flex-col space-y-2">
           <a href="#">À propos</a>
           <hr class="border border-blue-500 text-shadow-pop-tl invisible">
-        </div>
+        </div>m
         <div class="flex flex-col space-y-2">
           <a href="#">Services</a>
           <hr class="border border-blue-500 text-shadow-pop-tl invisible">
@@ -26,7 +26,7 @@
         </div>
       </div>
 
-      <button :class="hasScrolled ? 'bg-blue-500 text-white' : 'bg-transparent'" class="hidden lg:block hover:bg-blue-500 font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">Contactez-nous</button>
+      <button :class="hasScrolled ? 'bg-yellow-500 text-white' : 'bg-transparent'" class="hidden lg:block hover:bg-blue-500 hover:text-white px-3 py-2 2xl:py-2 2xl:px-4 text-sm 2xl:text-base border border-white hover:border-transparent rounded">Contactez-nous</button>
 
       <!-- On small screens -->
       <div class="block lg:hidden">
@@ -36,7 +36,7 @@
       </div>
     </nav>
 
-    <div class="min-h-screen bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-4 py-2 text-white text-lg lg:hidden slide-left"
+    <div class="min-h-screen bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-4 py-2 text-white text-base lg:hidden slide-left"
          :class="open ? 'block' : 'hidden'">
         <div class="group flex flex-col space-y-2">
           <a href="#" class="group-hover:text-gray-100">Accueil</a>
@@ -59,7 +59,7 @@
           <hr class="border border-blue-500 hidden text-shadow-pop-tl group-hover:block">
         </div>
         <div>
-          <button class="bg-transparent bg-blue-500 font-semibold text-white py-2 px-4 rounded">Contactez-nous</button>
+          <button class="bg-transparent bg-yellow-500 text-sm text-white py-2 px-4 rounded">Contactez-nous</button>
         </div>
     </div>
   </div>

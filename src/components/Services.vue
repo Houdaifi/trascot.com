@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-gray-50">
+  <div class="bg-gray-100">
     <h2 class="text-center text-gray-800 dark:text-gray-300 pb-12 text-3xl uppercase">Nos services...</h2>
     <carousel
-      :perPageCustom="[[320, 1],[800, 2],[1400, 3], [1700, 4]]"
+      :perPageCustom="[[320, 1],[800, 2],[1200, 3], [1700, 4]]"
       :mouse-drag="true"
       :autoplay="true"
       :paginationSize="0"
@@ -12,20 +12,18 @@
       :autoplayHoverPause="false"
     >
       
-        <hr class="border border-gray-100 w-1/2">
         <slide v-for="(service) in services" :key="service.id">
-            <div class="flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-700 p-8 mx-6 space-y-6">
+            <div class="flex flex-col items-center justify-center dark:bg-gray-700 p-8 mx-6 space-y-6">
                 <img class="w-64 h-64 2xl:w-80 2xl:h-80 rounded-full" :src="service.image" :alt="service.name">
-                <h3 class="uppercase font-light text-lg">{{service.name}}</h3>
+                <h3 class="uppercase font-light text-base">{{service.name}}</h3>
             </div>
         </slide>
     </carousel>
-    <div class="flex items-center justify-center -mt-12 xl:mt-6">
-        <button class="bg-blue-500 hover:bg-blue-400 font-semibold text-white text-base px-4 py-2 xl:py-3 xl:px-8 rounded">Voir plus</button>
+    <div class="flex flex-col items-center justify-center -mt-12 2xl:mt-6 pb-4">
+        <button class="bg-blue-500 hover:bg-blue-400 text-white text-sm px-4 py-2 2xl:py-3 2xl:px-8 rounded">Voir plus</button>
     </div>
   </div>
 </template>
-
 
 <script>
 import { Carousel, Slide } from 'vue-carousel'
