@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-gray-100">
-    <h2 class="text-center text-gray-800 dark:text-gray-300 pb-12 text-3xl uppercase">Parmi nos Clients...</h2>
+  <div class="">
+    <h2 class="text-center text-gray-800 dark:text-gray-300 pb-12 text-3xl uppercase font-medium">Parmi nos Clients...</h2>
     <carousel
       :perPageCustom="[[320, 4], [1700, 6]]"
       :mouse-drag="true"

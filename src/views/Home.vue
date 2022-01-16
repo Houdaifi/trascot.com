@@ -1,11 +1,11 @@
 <template>
-  <div class="">
+  <div class="text-gray-900 bg-gradient-to-b from-gray-50 to-gray-300 text-sm 2xl:text-base font-light">
     <navbar ref="navbar"/>
     <v-carousel/>
-    <propos class="py-12"/>
-    <services class="pt-12"/>
-    <projets class="py-12"/>
-    <partners class="pt-12"/>
+    <propos class="py-24"/>
+    <services class="pt-24"/>
+    <projets class="py-24"/>
+    <partners class="pt-24"/>
   </div>
 </template>
 

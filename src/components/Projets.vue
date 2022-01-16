@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-gray-100"> 
+    <div class=""> 
         <div class="flex items-center justify-center flex-col space-y-16">
-            <h2 class="text-center text-gray-800 dark:text-gray-300 text-3xl uppercase">Quelques uns de nos projets...</h2>
+            <h2 class="text-center text-gray-800 dark:text-gray-300 text-3xl uppercase font-medium">Quelques uns de nos projets...</h2>
         </div>
 
         <div class="flex flex-col lg:flex-row items-center justify-center space-y-12 lg:space-y-0 lg:space-x-24 mt-16">

@@ -1,9 +1,9 @@
 <template>
-  <div class="fixed w-full z-10" :class="hasScrolled ? 'bg-gray-50 text-black' : 'text-white'">
+  <div class="fixed w-full bg-gray-50 text-black z-10">
     <nav class="container mx-auto p-4 flex justify-between items-center">
-      <h1 class="text-3xl 2xl:text-4xl font-bold">Trascot</h1>
+      <h1 style="font-family: 'Fuggles', cursive;" class="text-3xl 2xl:text-5xl font-bold">Trascot</h1>
 
-      <div class="lg:flex space-x-14 text-base 2xl:text-lg mt-3 hidden">
+      <div class="lg:flex space-x-14 text-base mt-3 hidden" :class="hasScrolled ? 'font-medium' : 'font-normal'">
         <div class="flex flex-col space-y-2">
           <a href="#">Accueil</a>
           <hr class="border border-blue-500 text-shadow-pop-tl">
@@ -11,7 +11,7 @@
         <div class="flex flex-col space-y-2">
           <a href="#">À propos</a>
           <hr class="border border-blue-500 text-shadow-pop-tl invisible">
-        </div>m
+        </div>
         <div class="flex flex-col space-y-2">
           <a href="#">Services</a>
           <hr class="border border-blue-500 text-shadow-pop-tl invisible">
@@ -26,7 +26,7 @@
         </div>
       </div>
 
-      <button :class="hasScrolled ? 'bg-yellow-500 text-white' : 'bg-transparent'" class="hidden lg:block hover:bg-blue-500 hover:text-white px-3 py-2 2xl:py-2 2xl:px-4 text-sm 2xl:text-base border border-white hover:border-transparent rounded">Contactez-nous</button>
+      <button :class="hasScrolled ? 'bg-yellow-500 text-white' : 'bg-yellow-500 text-white'" class="hidden lg:block hover:bg-blue-500 hover:text-white px-3 py-2 2xl:py-2 2xl:px-4 text-sm border border-white hover:border-transparent rounded">Contactez-nous</button>
 
       <!-- On small screens -->
       <div class="block lg:hidden">
@@ -96,4 +96,6 @@ export default {
 @keyframes slide-left{0%{transform:translateX(100px)}100%{transform:translateX(0px)}}
 
 .slide-left{animation:slide-left .5s cubic-bezier(.25,.46,.45,.94) both}
+
+@import url("https://fonts.googleapis.com/css2?family=Fuggles&display=swap");
 </style>
