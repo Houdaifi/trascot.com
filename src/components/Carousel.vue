@@ -4,9 +4,9 @@
      :autoplayHoverPause="false" :mouse-drag="true" :autoplayTimeout="5000" :paginationEnabled="false">
       
       <slide class="bg-hero-pattern2 bg-cover cursor-pointer max-h-full">
-        <div class="bg-gradient-to-r from-gray-200 to-transparent relative flex flex-col items-center justify-center xl:items-start xl:justify-center h-full space-y-8 px-0 md:px-12 2xl:px-32">
+        <div class="bg-gradient-to-b md:bg-gradient-to-r from-gray-200 to-transparent relative flex flex-col items-center justify-center xl:items-start xl:justify-center h-full space-y-8 px-0 xl:px-12 2xl:px-32">
           <div></div>
-          <h1 class="z-30  text-gray-900 text-4xl lg:text-5xl leading-normal lg:leading-relaxed text-center xl:text-left rounded font-black max-w-xl 2xl:max-w-3xl uppercase focus-in-expand">
+          <h1 class="z-30 text-gray-900 text-4xl lg:text-5xl leading-normal lg:leading-relaxed text-center xl:text-left rounded font-bold max-w-xl 2xl:max-w-3xl uppercase focus-in-expand">
             <span class="text-yellow-500">Trascot</span> vous offre une large choix de stockage standard ou sur meusre
           </h1>
           <hr class="border-2 border-yellow-500 w-36">
@@ -16,12 +16,12 @@
           </button>
 
           <!-- Rounded circles -->
-          <img class="block xl:hidden zoomIn bg-red-600 absolute bottom-12 left-44 w-44 h-44 xl:w-64 xl:h-64 rounded-full ring-2 ring-white" src="../assets/storage_two.jpg" alt="rayonnage">
-          <img class="hidden xl:block zoomIn bg-red-600 absolute bottom-2 right-52 w-44 h-44 xl:w-64 xl:h-64 rounded-full ring-2 ring-white" src="../assets/storage_two.jpg" alt="rayonnage">
+          <img class="block xl:hidden zoomIn bg-red-600 absolute bottom-2 left-10 w-24 h-24 md:w-44 md:h-44 2xl:w-64 2xl:h-64 rounded-full ring-2 ring-white" src="../assets/storage_two.jpg" alt="rayonnage">
+          <img class="hidden xl:block zoomIn bg-red-600 absolute bottom-2 right-52 w-24 h-24 md:w-44 md:h-44 2xl:w-64 2xl:h-64 rounded-full ring-2 ring-white" src="../assets/storage_two.jpg" alt="rayonnage">
 
-          <img class="xl:block hidden z-20 zoomIn bg-red-600 absolute top-1/3 right-1/3 w-44 h-44 xl:w-64 xl:h-64 rounded-full ring-2 ring-white" src="../assets/storage_three.jpg" alt="rayonnage">
+          <img class="xl:block hidden z-20 zoomIn bg-red-600 absolute top-1/3 right-1/3 w-44 h-44 md:w-44 md:h-44 2xl:w-64 2xl:h-64 rounded-full ring-2 ring-white" src="../assets/storage_three.jpg" alt="rayonnage">
 
-          <img class="zoomIn bg-red-600 absolute top-14 right-10 w-44 h-44 xl:w-64 xl:h-64 rounded-full ring-2 ring-white" src="../assets/storage.jpg" alt="rayonnage">
+          <img class="zoomIn bg-red-600 absolute top-16 right-10 w-24 h-24 md:w-44 md:h-44 2xl:w-64 2xl:h-64 rounded-full ring-2 ring-white" src="../assets/storage.jpg" alt="rayonnage">
         </div>
       </slide>
       <slide class="bg-hero-pattern bg-cover h-screen cursor-pointer">

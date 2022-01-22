@@ -2,7 +2,7 @@
   <div class="text-gray-900 bg-gradient-to-b from-gray-50 to-gray-300 text-sm 2xl:text-base font-light">
     <navbar ref="navbar"/>
     <v-carousel/>
-    <propos class="py-24"/>
+    <propos class=""/>
     <services class="pt-24"/>
     <projets class="py-24"/>
     <partners class="pt-24"/>
@@ -28,3 +28,11 @@ export default {
   },
 }
 </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+</style>
