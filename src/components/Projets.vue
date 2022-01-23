@@ -1,13 +1,14 @@
 <template>
     <div class=""> 
-        <div class="flex items-center justify-center flex-col space-y-16">
-            <h2 class="text-center text-gray-800 dark:text-gray-300 text-3xl uppercase font-medium">Quelques uns de nos projets...</h2>
+        <div class="flex items-center justify-center flex-col pb-12">
+            <h2 class="text-center text-gray-800 dark:text-gray-300 text-4xl uppercase font-semibold mb-8">Quelques uns de nos projets...</h2>
+            <p class="text-center max-w-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quos possimus voluptatem repudiandae cupiditate.</p>
         </div>
 
-        <div class="flex flex-col lg:flex-row items-center justify-center space-y-12 lg:space-y-0 lg:space-x-24 mt-16">
+        <div class="flex flex-col lg:flex-row items-center justify-center space-y-12 lg:space-y-0 lg:space-x-24">
             <div class="flex flex-col items-center overflow-hidden hover14" v-for="project in projects" :key="project.id">
                 <figure>
-                    <img class="w-80 2xl:w-96 p-1 shadow cursor-pointer" :src="project.image"/>
+                    <img class="w-80 2xl:w-96 p-1 shadow cursor-pointer border" :src="project.image"/>
                 </figure>
                 <h4 class="uppercase font-light text-base mt-4 mb-2">{{project.name}}</h4>
                 <h6 class="text-sm">
@@ -27,7 +28,7 @@ export default {
         return {
             projects:[
                 {id: 1, name: 'lorem ipsum', image: require("../assets/project-2.jpg"), location: 'Agadir, Maroc'},
-                {id: 2, name: 'lorem ipsum', image: require("../assets/project-1.jpg"), location: 'Tanger, Maroc'},
+                {id: 2, name: 'lorem ipsum', image: require("../assets/project-2.jpg"), location: 'Tanger, Maroc'},
                 {id: 3, name: 'lorem ipsum', image: require("../assets/project-3.jpg"), location: 'Casablanca, Maroc'},
             ]
         }

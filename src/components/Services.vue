@@ -1,6 +1,9 @@
 <template>
-  <div class="">
-    <h2 class="text-center text-gray-800 dark:text-gray-300 pb-12 text-3xl uppercase font-medium">Nos services...</h2>
+  <div class="pb-14">
+    <div class="flex flex-col justify-center items-center pb-12 text-gray-700">
+        <h2 class="text-center text-gray-800 dark:text-gray-300 text-4xl uppercase font-semibold mb-8">Nos services...</h2>
+        <p class="text-center max-w-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quos possimus voluptatem repudiandae cupiditate.</p>
+    </div>
     <carousel
       :perPageCustom="[[320, 1],[800, 2],[1200, 3], [1700, 4]]"
       :mouse-drag="true"
@@ -15,13 +18,11 @@
         <slide v-for="(service) in services" :key="service.id">
             <div class="flex flex-col items-center justify-center dark:bg-gray-700 p-8 mx-6 space-y-6">
                 <img class="w-64 h-64 2xl:w-80 2xl:h-80 rounded-full" :src="service.image" :alt="service.name">
-                <h3 class="uppercase font-light text-base">{{service.name}}</h3>
+                <h3 class="uppercase text-base">{{service.name}}</h3>
             </div>
         </slide>
     </carousel>
-    <div class="flex flex-col items-center justify-center -mt-12 2xl:mt-6 pb-4">
-        <button class="bg-blue-500 hover:bg-blue-400 text-white text-sm px-4 py-2 2xl:py-3 2xl:px-8 rounded">Voir plus</button>
-    </div>
+    
   </div>
 </template>
 

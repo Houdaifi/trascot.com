@@ -1,11 +1,14 @@
 <template>
-  <div class="text-gray-900 bg-gradient-to-b from-gray-50 to-gray-300 text-sm 2xl:text-base font-light">
+  <div class="text-gray-900 text-sm 2xl:text-base">
     <navbar ref="navbar"/>
     <v-carousel/>
     <propos class=""/>
-    <services class="pt-24"/>
-    <projets class="py-24"/>
+    <services class="py-24"/>
+    <contactUs class=""/>
+    <projets class="pt-24"/>
     <partners class="pt-24"/>
+    <footeer class=""/>
+
   </div>
 </template>
 
@@ -14,14 +17,17 @@
 import Navbar from '@/components/Navbar.vue'
 import VCarousel from '@/components/Carousel.vue'
 import Services from '@/components/Services.vue'
+import ContactUs from '@/components/ContactUs.vue'
 import Propos from '@/components/Propos.vue'
 import Projets from '@/components/Projets.vue'
 import Partners from '@/components/Partners.vue'
+import Footeer from '@/components/Footeer.vue'
+
 
 export default {
   name: 'Home',
   components: {
-    Navbar,VCarousel,Services,Propos,Projets,Partners
+    Navbar,VCarousel,Services,Propos,Projets,Partners,ContactUs,Footeer
   },
   mounted(){
     window.addEventListener('scroll', this.$refs.navbar.scrollListener)

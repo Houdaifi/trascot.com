@@ -1,9 +1,9 @@
 <template>
   <div class="fixed w-full bg-gray-50 text-black z-10">
     <nav class="container mx-auto p-4 flex justify-between items-center">
-      <h1 style="font-family: 'Fuggles', cursive;" class="text-3xl 2xl:text-5xl font-bold">Trascot</h1>
+      <h1 class="text-3xl font-bold text-blue-900">Tragefer</h1>
 
-      <div class="lg:flex space-x-14 text-base mt-3 hidden" :class="hasScrolled ? 'font-medium' : 'font-normal'">
+      <div class="lg:flex space-x-14 text-base mt-3 hidden">
         <div class="flex flex-col space-y-2">
           <a href="#">Accueil</a>
           <hr class="border border-blue-500 text-shadow-pop-tl">
@@ -97,5 +97,4 @@ export default {
 
 .slide-left{animation:slide-left .5s cubic-bezier(.25,.46,.45,.94) both}
 
-@import url("https://fonts.googleapis.com/css2?family=Fuggles&display=swap");
 </style>
