@@ -7,7 +7,7 @@
         <div class="bg-gradient-to-b md:bg-gradient-to-r from-gray-200 to-transparent relative flex flex-col items-center justify-center xl:items-start xl:justify-center h-full space-y-8 px-0 xl:px-12 2xl:px-32">
           <div></div>
           <h1 class="z-30 text-gray-900 text-4xl lg:text-5xl leading-normal lg:leading-relaxed text-center xl:text-left rounded font-bold max-w-xl 2xl:max-w-3xl uppercase focus-in-expand">
-            <span class="text-yellow-500">Tragfer</span> vous offre une large choix de stockage standard ou sur meusre
+            <span class="text-yellow-500 font-extrabold">Tragfer</span> vous offre une large choix de stockage standard ou sur meusre
           </h1>
           <hr class="border-2 border-yellow-500 w-36">
           <button class="text-black bg-white hover:bg-yellow-500 hover:text-white px-20 py-3 rounded text-base font-semibold">

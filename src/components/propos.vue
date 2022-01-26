@@ -8,19 +8,19 @@
         Soluta provident voluptates distinctio reiciendis quibusdam ducimus quasi sequi quos hic, quaerat nemo nostrum, 
         nulla voluptate accusantium possimus ut ea eaque consequatur nesciunt eligendi nam explicabo recusandae sapiente inventore. 
         Sit reprehenderit ut aperiam esse quidem quo alias nam laborum nesciunt? Quam eligendi aperiam temporibus?</p>
-      <button class="bg-transparent border-2 w-1/4 bg-blue-600 text-white text-sm px-4 py-2 2xl:py-3 2xl:px-8 rounded">Savoir plus</button>
+      <button class="bg-transparent border-2 w-1/2 xl:w-1/4 bg-blue-600 text-white text-sm px-4 py-2 2xl:py-3 2xl:px-8 rounded">Savoir plus</button>
         
     </div>
 
     <!-- Second part -->
-    <div class="grid grid-cols-1 xl:grid-cols-2 text-white bg-yellow-600 max-w-xl xl:max-w-4xl">
-      <div class="flex flex-col justify-center items-start px-12 font-bold">
-        <h1 class="text-3xl xl:text-9xl">23<span class="text-2xl">ANS</span></h1>
-        <h2 class="text-xl xl:text-2xl">We are Building the Future and Restoring</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 text-white bg-yellow-600 xl:max-w-2xl 2xl:max-w-4xl">
+      <div class="flex flex-col justify-center items-start p-12 font-bold">
+        <h1 class="text-9xl">23<span class="text-2xl">ANS</span></h1>
+        <h2 class="text-2xl">We are Building the Future and Restoring</h2>
       </div>
-      <div class="bg-a-propos-img2 bg-cover"></div>
-      <div class="bg-a-propos-img1 bg-cover"></div>
-      <div class="flex flex-col space-y-4 justify-center items-start px-12 space-y-4 font-bold text-4xl bg-gray-800">
+      <img class="w-full h-full" src="../assets/bilboard.jpg" alt="bilboard">
+      <img class="w-full h-full" src="../assets/boiling.jpg" alt="boiling">
+      <div class="flex flex-col space-y-4 justify-center items-start p-12 space-y-4 font-bold text-4xl bg-gray-800">
         <h1>Renting Tips & Articles</h1>
         <h2 class="font-normal text-base text-gray-200">We are building the future and restoring</h2>
         <button class="border-2 bg-transparent hover:bg-red-500 text-white text-sm px-4 py-2 2xl:py-3 2xl:px-8 rounded">Voir plus</button>
