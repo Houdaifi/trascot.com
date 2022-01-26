@@ -31,6 +31,6 @@
 
 <script>
 export default {
-  name:'Propos'
+  name:'VPropos'
 }
 </script>

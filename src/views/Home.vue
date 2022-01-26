@@ -2,7 +2,7 @@
   <div class="text-gray-900 text-sm 2xl:text-base">
     <navbar ref="navbar"/>
     <v-carousel/>
-    <propos class=""/>
+    <v-propos class=""/>
     <services class="py-24"/>
     <contactUs class=""/>
     <projets class="pt-24"/>
@@ -18,7 +18,7 @@ import Navbar from '@/components/Navbar.vue'
 import VCarousel from '@/components/Carousel.vue'
 import Services from '@/components/Services.vue'
 import ContactUs from '@/components/ContactUs.vue'
-import Propos from '@/components/Propos.vue'
+import VPropos from '../components/VPropos.vue'
 import Projets from '@/components/Projets.vue'
 import Partners from '@/components/Partners.vue'
 import Footeer from '@/components/Footeer.vue'
@@ -27,7 +27,7 @@ import Footeer from '@/components/Footeer.vue'
 export default {
   name: 'Home',
   components: {
-    Navbar,VCarousel,Services,Propos,Projets,Partners,ContactUs,Footeer
+    Navbar,VCarousel,Services,VPropos,Projets,Partners,ContactUs,Footeer
   },
   mounted(){
     window.addEventListener('scroll', this.$refs.navbar.scrollListener)
