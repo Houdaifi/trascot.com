@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed w-full bg-gray-50 text-black z-10">
+  <div class="fixed w-full bg-gray-100 text-black z-10">
     <nav class="container mx-auto p-4 flex justify-between items-center">
       <h1 class="text-3xl font-bold text-blue-900">Tragefer</h1>
 

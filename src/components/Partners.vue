@@ -2,12 +2,12 @@
   <div class="">
     <h2 class="text-center text-gray-800 dark:text-gray-300 text-4xl uppercase font-semibold mb-8">Ils nous font confiance...</h2>
     <carousel
-      :perPageCustom="[[320, 4], [1700, 6]]"
+      :perPageCustom="[[320, 2], [1700, 6]]"
       :mouse-drag="true"
       :autoplay="true"
       :loop="true"
       :paginationSize="0"
-      :speed="800"
+      :speed="8000"
       :autoplayTimeout="1000"
       :autoplayHoverPause="false"
     >

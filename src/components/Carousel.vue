@@ -1,6 +1,6 @@
 <template>
   <div>
-    <carousel :per-page="1" :autoplay="true" :loop="true" :speed="1000"
+    <carousel :per-page="1" :autoplay="true" :loop="true" :speed="3000"
      :autoplayHoverPause="false" :mouse-drag="true" :autoplayTimeout="5000" :paginationEnabled="false">
       
       <slide class="bg-hero-pattern2 bg-cover cursor-pointer max-h-full">

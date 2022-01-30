@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-800 flex flex-col-reverse xl:flex-row justify-center px-6 xl:px-0 py-16 text-gray-200 xl:space-y-0 xl:space-x-24">
+  <div class="bg-gray-800 flex flex-col-reverse xl:flex-row justify-center px-8 py-16 text-gray-200 xl:space-y-0 xl:space-x-24">
       
       <form action="" class="p-8 shadow-2xl border rounded space-y-6 max-w-xl">
         <h1 class="text-center text-4xl uppercase font-semibold mb-4 text-white">Contact Us</h1>
@@ -76,7 +76,7 @@
 
       </div>
 
-      <div class="xl:pt-24 rounded hidden xl:block">
+      <div  style="margin-left:200px !important;" class="xl:pt-24 rounded hidden xl:block">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4854.023859889115!2d-5.774917603093153!3d35.74171373382515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b80f8fe0e66ab%3A0x90f7f3f25143077c!2sRte%20de%20Tetouan%2C%20Tanger!5e0!3m2!1sen!2sma!4v1642962798665!5m2!1sen!2sma" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
 
