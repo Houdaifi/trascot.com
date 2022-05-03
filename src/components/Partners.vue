@@ -2,7 +2,7 @@
   <div class="">
     <h2 class="text-center text-gray-800 dark:text-gray-300 text-4xl uppercase font-semibold mb-8">Ils nous font confiance...</h2>
     <carousel
-      :perPageCustom="[[320, 2], [1700, 6]]"
+      :perPageCustom="[[320, 2], [1000, 4], [1700, 6]]"
       :mouse-drag="true"
       :autoplay="true"
       :loop="true"
@@ -13,7 +13,7 @@
     >
 
         <slide v-for="(partner) in partners" :key="partner.id" class="">
-            <img class="w-full lg:w-1/2 p-2 rounded" :src="partner.image" :alt="partner.name">
+            <img class="w-1/2 md:w-1/3 2xl:w-1/2 p-2 rounded" :src="partner.image" :alt="partner.name">
         </slide>
     </carousel>
   </div>
